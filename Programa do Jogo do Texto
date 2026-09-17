@@ -1,0 +1,503 @@
+programa
+{
+    inclua biblioteca Texto --> texto
+    inclua biblioteca Util --> util
+
+    inteiro ouro = 50
+    inteiro respeito = 50
+    inteiro vida = 100
+    inteiro vel  = 40 
+    logico pocao = falso
+    
+    funcao inicio()
+    {
+        inteiro opcao
+ escrevalento("░░░░█▀░░░█▀█░░░█▀▄░█▀▀░▀█▀░░░▀█▀░▀█▀░█▀▄░█▀█░█▀█░█▀█░░░█▀▀░░░█▀█░░░█▀█░█░█░█▀▀░█▀█░▀█▀░█░█░█▀▄░█▀▀░▀█▀░█▀▄░█▀█░▀█░\n",5)
+       escrevalento("░░░▀▄░░░░█░█░░░█▀▄░█▀▀░░█░░░░░█░░░█░░█▀▄░█▀█░█░█░█░█░░░█▀▀░░░█░█░░░█▀█░▀▄▀░█▀▀░█░█░░█░░█░█░█▀▄░█▀▀░░█░░█▀▄░█░█░░▄▀\n",5)
+       escrevalento("░░░░▀▀░░░▀▀▀░░░▀░▀░▀▀▀░▀▀▀░░░░▀░░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀░░░▀▀▀░░░▀▀▀░░░▀░▀░░▀░░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀░\n\n",5)
+
+       limpa()
+
+       util.aguarde(300)
+       
+
+       escreva("░░░░█▀░░░█▀█░░░█▀▄░█▀▀░▀█▀░░░▀█▀░▀█▀░█▀▄░█▀█░█▀█░█▀█░░░█▀▀░░░█▀█░░░█▀█░█░█░█▀▀░█▀█░▀█▀░█░█░█▀▄░█▀▀░▀█▀░█▀▄░█▀█░▀█░\n")
+       escreva("░░░▀▄░░░░█░█░░░█▀▄░█▀▀░░█░░░░░█░░░█░░█▀▄░█▀█░█░█░█░█░░░█▀▀░░░█░█░░░█▀█░▀▄▀░█▀▀░█░█░░█░░█░█░█▀▄░█▀▀░░█░░█▀▄░█░█░░▄▀\n")
+       escreva("░░░░▀▀░░░▀▀▀░░░▀░▀░▀▀▀░▀▀▀░░░░▀░░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀░░░▀▀▀░░░▀▀▀░░░▀░▀░░▀░░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀░\n")
+
+       util.aguarde(200)
+
+       limpa()
+
+       util.aguarde(300)
+       
+
+       escreva("░░░░█▀░░░█▀█░░░█▀▄░█▀▀░▀█▀░░░▀█▀░▀█▀░█▀▄░█▀█░█▀█░█▀█░░░█▀▀░░░█▀█░░░█▀█░█░█░█▀▀░█▀█░▀█▀░█░█░█▀▄░█▀▀░▀█▀░█▀▄░█▀█░▀█░\n")
+       escreva("░░░▀▄░░░░█░█░░░█▀▄░█▀▀░░█░░░░░█░░░█░░█▀▄░█▀█░█░█░█░█░░░█▀▀░░░█░█░░░█▀█░▀▄▀░█▀▀░█░█░░█░░█░█░█▀▄░█▀▀░░█░░█▀▄░█░█░░▄▀\n")
+       escreva("░░░░▀▀░░░▀▀▀░░░▀░▀░▀▀▀░▀▀▀░░░░▀░░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀░░░▀▀▀░░░▀▀▀░░░▀░▀░░▀░░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀░\n")
+
+       util.aguarde(3000)
+
+       limpa()
+
+       
+       escrevalento("\nA jornada começa, vocẽ é um aventureiro em busca de ajudar um reino infeliz, com um rei tirano. tenha cuidado com suas escolhas, pois elas terão consequencias\n", vel)
+       escrevalento("\nVoce começa a andar pela trilha que leva ao reino\n", vel)
+          
+    //evento 1     
+        escrevalento("\nMais a frente voce avista um senhor com sua carroça sem roda, tombada no meio da estrada de terra.\n", vel)
+        escrevalento("\n-Ola meu jovem, me chamo Orisvaldo, poderia me ajudar a por a roda de volta na minha carroça?\n", vel)
+        
+        escrevalento("\nAjudar o senhor?\n", vel)
+         escrevalento("[1] Sim\n", vel)
+          escrevalento("[2] Nao\n", vel)
+            escrevalento("[3] Roubar o senhor\n", vel)
+         leia(opcao)
+
+         escolha (opcao){
+      caso 1:
+            ajuda1 ()
+        pare
+      caso 2:
+        escrevalento("\nVoce passa reto e não ajuda o senhor.\n", vel)
+         respeito =  respeito - 5 
+        pare
+      caso 3:
+        escrevalento("\nO roubo dá errado e o senhor te expulsa a chutes e pontapes.\n", vel)
+         respeito = respeito - 10
+         vida = vida - 5
+      caso contrario:
+        escreva("\nVoce continua sua caminhada pela estrada de terra\n")
+    
+       }
+//evento 2
+       escrevalento("\nVoce avista uma mulher sendo atacada por bandidos\n", vel)
+        escrevalento("[1] Lutar com os bandidos\n", vel)
+        escrevalento("[2] Seguir seu caminho\n", vel)
+        escrevalento("[3] Ajudar os bandidos a roubar a mulher\n", vel)
+            leia(opcao)
+            
+      escolha (opcao){
+          caso 1:
+              escrevalento("\nVoce luta com  os bandidos e pega o ouro dos bandidos para devolver a mulher\n", vel)
+               respeito = respeito + 10
+              pare
+          caso 2:
+             escrevalento("Voce contiuna andando ignorando completamente o problema", vel)
+             respeito = respeito - 5
+             pare
+          caso 3:
+              escrevalento("Ajudando os bandidos, eles te dao metade do que roubaram", vel)
+               respeito = respeito - 10
+               ouro = ouro + 20
+             pare
+           caso contrario:
+              pare
+      }
+//evento 3
+      escrevalento("\nContinuando sua caminhada, voce encontra uma mulher chorando.\n", vel)
+
+           escrevalento("\n[1] ignorar ela", vel)
+           escrevalento("\n[2] falar com ela\n", vel)
+           
+          leia(opcao)
+
+      escolha(opcao){
+          caso 1:
+                  escrevalento("\nvoce segue seu caminho ignorando a mulher\n", vel)
+                  respeito = respeito - 5
+                  pare
+     
+            //nada acontece
+          caso 2:
+             ajuda3()
+            pare
+        
+      
+      }
+//evento 4
+escrevalento("\nMais a frente, voce ve um homem preso em vinhas na floresta, parece que ele ficou preso enquanto tentava colher alguns frutos no topo da árvore\n", vel)
+        escrevalento("[1] Ajudar\n", vel)
+        escrevalento("[2] Ignorar\n", vel)
+        escrevalento("[3] Fazer bullying\n", vel)
+          leia(opcao)
+
+     escolha(opcao){
+         caso 1:
+              escrevalento("\nVoce corta as vinhas com sua espada, liberando o homem mas acaba se machucando no processo\n", vel )
+               escrevalento("\n-alguma hora eu te ajudo de volta\n", vel)
+                 respeito = respeito + 20
+                 vida = vida - 5
+                pare
+         caso 2:
+          escrevalento("\nVoce passa reto ignorando o homem enquanto ele te xinga e grita por ajuda\n", vel)
+           respeito = respeito - 10
+            pare
+         caso 3:
+           escrevalento("\nEle grita com voce mandando voce parar e ajudar ele, mas nao pode fazer muito mais que isso\n", vel)
+           respeito = respeito - 20
+          pare
+     }
+//evento 5
+
+
+        escrevalento("Ao entrar mais adentro na floresta voce ve um caldeirão com uma bruxa jacaré de cabelos loiros lisos e com um vestido vermelho escarlate, ela fala com voce\n", vel )
+                escrevalento("\n- Ola caro aventureiro, me chamo Cuca, o meu ajudante sumiu faz algum tempo, acho que ele fugiu, poderia me ajudar?\n", vel)
+         escrevalento("[1] ignorar\n", vel)
+         escrevalento("[2] saquear as ervas mágicas\n", vel)
+         escrevalento("[3] ajudar a recuperar as ervas mágicas\n", vel)
+         leia(opcao)
+
+escolha(opcao){
+       caso 1:
+            escrevalento("\nvoce a ignora, ela fica brava mas nao faz nada\n", vel)
+              respeito =  respeito - 5
+              pare
+      caso 2:
+            escrevalento("\nda errado e ela te expulsa á colheradas na cabeça\n", vel)
+           respeito = respeito - 10
+             vida =  vida - 20               
+             pare
+     caso 3:
+escrevalento("voce sai andando pela floresta, indo nos lugares que ela pediu e entrega as ervas ao final da missao.\n", vel)
+escrevalento("A Cuca te dá uma poçao do amor como recompensa.\n", vel)
+respeito = respeito + 30
+pocao = verdadeiro
+  pare
+  
+           }
+//evento final
+
+escrevalento("\nApos seu encontro com cuca, voce continua a caminhar, e dessa vez finalmente chega ao castelo do rei tirano, voce consegue sentir uma energia sombria ao redor do castelo", vel)
+
+escrevalento("\n Ao entrar voce ve o rei sentado em seu trono como se aguardasse sua chegada, o rei olha para voce e um sentimento de deja vu surge em voce, voce ja viu esse rei antes…\n", vel)
+
+escrevalento("REI:- Eu estive te esperando, eu sabia que voce uma hora chegaria, como esta a minha filha, joaozinho?\n", vel)
+
+escrevalento("JOAOZINHOela nao e mais sua filha e nem minha esposa", vel)
+
+escrevalento("\n REI- o que voce fez?", vel)
+
+ escrevalento("\n JOAOZINHO: Ela nao queria que eu virasse um aventureiro, entao ela pediu divorcio", vel)
+
+escrevalento("\n REI: Ela foi inteligente uma vez na vida dela, uma pena que ela nao tivesse essa inteligencia quando se casou com voce\n", vel)
+
+escrevalento("\nO que voce deseja fazer?\n", vel)
+escrevalento("[1] Lutar com o rei\n", vel)
+escrevalento("[2] pedir o rei em casamento\n", vel)
+escrevalento("[3] fugir\n", vel)
+   leia(opcao)
+
+    escolha(opcao){
+        caso 1: lutacomrei()
+        pare
+        caso 2: eventofinalcasamento()
+        pare
+        caso 3:
+        escrevalento("\nJOAOZINHO - Pois saiba que voce nao me intimida Rei Tirano!!!!, irei tirar esse reino desse terror\n", vel)
+                   escrevalento("\nREI: - Veremos!\n", vel)
+                   
+                   escrevalento("\nO rei lança uma bola de fogo na direçao de Joaozinho, o mesmo desvia e começa a tentar se aproximar, falhando miseravelmente\n", vel)
+                   
+                   escrevalento("\nO tirano sorri ao ver Joaozinho cainda na armadilha do chao e BOOOOOOM, tudo explode, Joaozinho sente o terror o consumindo\n", vel)
+                   
+                   escrevalento("\nO braco do aventureiro voa longe e sem saida, o rei ataca usando magia de vento cortante, obrigando Joaozinho a recuar pra longe\n", vel)
+                   
+                   escrevalento("Joaozinho esta com serios danos e sem pensar muito, apenas sai correndo do castelo, temendo pela sua vida\n", vel)
+                   
+                   escrevalento("\nREI: - CORRA PELA SUA VIDA VERME IMUNDO!!!, QUANDO EU TE PEGAR, TE MATAREI DA FORMA MAIS CRUEL POSSIVEL!!!!!!\n", vel)
+                   
+                   escrevalento("\nVoce foge com vida, mas sem um braco e com a honra manchada pra sempre, alem de ter perdido todo o seu ouro\n", vel)
+
+                   escrevalento("\nEm alguns anos voce sera lembrado como a escoria humana e uma desonra a todos\n", vel)
+
+                    escrevalento("\nEspero que voce tenha gostado em quanto aventureiro, volte pra casa e nunca mais apareça novamente",vel)
+                   
+                   vida = vida - 50
+                   respeito = respeito - 50
+                   ouro = ouro - 100
+
+
+    }
+
+    }
+    funcao escrevalento(cadeia texto, inteiro velocidade){
+       inteiro numcaracteres = texto.numero_caracteres(texto)
+       caracter letra
+       
+         para(inteiro i=0; i < numcaracteres; i++){
+           letra = texto.obter_caracter(texto, i)
+            escreva(letra)
+             util.aguarde(velocidade)
+         }
+
+        }
+     funcao ajuda1 (){
+            inteiro opcao
+            
+          escrevalento("\nDe qual forma\n", vel)
+          escrevalento("[1] voce ajuda o senhor a levantar a carroça e por a roda\n", vel)
+           escrevalento("[2] Voce tenta por a roda sozinho\n", vel)
+            leia(opcao)
+
+            escolha (opcao){
+          caso 1:
+            escrevalento("\nBem sucedido!!! Voce ajuda o senhor e recebe 10 ouros de pagamento\n", vel)
+             ouro = ouro + 10
+             respeito = respeito +10
+             pare
+          caso 2:
+             escrevalento("\nFalhou, voce derruba a carroça e isso transforma uma simples roda fora do lugar em uma carroça quebrada\n", vel)
+               respeito = respeito - 10
+              pare
+          caso contrario:
+             pare
+            
+            }
+          
+        }
+    funcao ajuda3 (){
+        inteiro opcao
+          escrevalento("ao falar com ela, ela diz que foi roubada por bandidos que passaram   por ali, provavelmente os mesmo que atacaram a outra mulher lá atrás.\n", vel)
+        
+      escrevalento("\nVoce luta com  os bandidos e tem o ouro da mulher em suas maos\n", vel)
+       escrevalento("[1] Roubar o ouro roubado\n", vel)
+       escrevalento("[2] Devolver o ouro da mulher\n", vel)
+       leia(opcao)
+
+       escolha (opcao){
+           caso 1:
+              escrevalento("\nVoce rouba os 40 ouros da mulher\n", vel)
+            respeito = respeito - 10
+                ouro = ouro + 40
+              pare
+           caso 2:
+              escrevalento("\nVoce devolve o ouro a mulher e ela te agradece\n", vel)
+              respeito = respeito + 10
+              pare
+           
+       }
+    }
+    funcao eventofinalcasamento (){
+            se (respeito <= 20 e ouro >= 50 ou pocao == verdadeiro){
+                escrevalento("\nREI: - O-oque?? v-voce endoidou de vez??\n", vel)
+                escrevalento("\nO rei parece chocado com seu pedido porem ele nao te mata imediatamente e voce ve um leve corado em seu rosto, seria isso um sinal?\n", vel)
+                 escrevalento("\nREI: - mas ate que voce nao e tao ruim assim..... PARABENS! Voce encontrou o final secreto! voce conseguiu casar com o rei e reinar ao seu lado\n", vel)
+                 escrevalento("\nessa definitivamente nao era sua missao mas acho que ja e alguma coisa\n", vel)
+            }
+            senao{
+                escrevalento("\nO rosto do rei se fecha em uma expressao de choque e raiva\n", vel)
+                escrevalento("\nREI-Voce esta fazendo uma piada? acha que isso e uma brincadeira? criatura insolente\n", vel) 
+                escrevalento("\nEnquanto voce estava ajoelhado no chao o rei te ataca\n", vel)
+                escrevalento("\nPARABENS! Voce morreu nas maos do rei, poxa nao foi dessa vez, acho que era melhor ter ficado com a mariazinha, ne?\n", vel)
+  
+            }
+    }
+    funcao lutacomrei(){
+        inteiro opcao = 1
+
+        inteiro vida_rei = 80
+
+        inteiro acao_rei = 1
+
+        inteiro ult_ac_rei = 0
+
+        inteiro ult_ac_rei2 = 0
+
+     escrevalento("\nVoce tira a espada de sua bainha, e se prepara para o combate\n",vel)
+
+    enquanto(vida > 0 e vida_rei > 0){
+
+        escreva("\nVida: ", vida," \n")
+
+        escreva("\nVida do rei: ", vida_rei," \n")
+
+        escrevalento("\n[1] Atacar\n",vel)
+
+        escrevalento("\n[2] Bloquear\n",vel)
+
+        escrevalento("\n[3] Aguardar\n\n",vel)    
+        
+        leia(opcao)
+
+        acao_rei = sorteia(1,3)
+
+        se(ult_ac_rei != 0){
+            
+            ult_ac_rei2 = ult_ac_rei
+        }
+
+        ult_ac_rei = acao_rei
+
+        se(ult_ac_rei == 1 e ult_ac_rei2 == 1){
+            
+            acao_rei = 2
+        }
+        se(ult_ac_rei == 2 e ult_ac_rei2 == 2){
+            
+            acao_rei = 3
+        }
+        se(ult_ac_rei == 3 e ult_ac_rei2 == 3){
+            
+            acao_rei = 1
+        }
+
+
+        escolha(opcao){
+
+            
+
+            caso 1://atacar
+
+            se(acao_rei == 1){
+
+                escrevalento("\nSua espada colide com a do rei! Nenhum dano e feito.\n", vel)
+            }
+            se(acao_rei == 2){
+
+                escrevalento("\nSeu ataque foi bloqueado, o rei lanca um contra ataque! (-20 vida)\n", vel)
+
+                vida = vida - 20
+            }
+            se(acao_rei == 3){
+
+                escrevalento("\nVoce lanca um corte com sucesso!! (20 dano)\n", vel)
+
+                vida_rei = vida_rei - 20
+            }
+    
+            pare
+            
+            
+            caso 2://bloquear
+            
+            se(acao_rei == 1){
+
+                escrevalento("\nVoce bloquea o ataque do rei e contra ataca!!\n", vel)
+
+                vida_rei = vida_rei - 20
+            }
+            se(acao_rei == 2){
+
+                escrevalento("\nAmbos estao na defensiva.\n", vel)
+            }
+            se(acao_rei == 3){
+
+                escrevalento("\nO rei antecipou sua tentativa de bloqueio e ataca o lugar desprotegido! (-20 vida)\n", vel)
+
+                vida = vida - 20
+            }
+            pare
+            
+            caso 3:
+            
+            se(acao_rei == 1){
+
+                escrevalento("\nO rei te ataca! (-20 vida)\n", vel)
+
+                vida = vida - 20
+            }
+            se(acao_rei == 2){
+
+                escrevalento("\nVoce se aproveita da tentativa de bloqueio do rei para atacar!!\n", vel)
+
+                vida_rei = vida_rei - 20
+            }
+            se(acao_rei == 3){
+
+                escrevalento("\nVoce e o rei se encaram, ambos esperando que outro faça o primeiro movimento.\n", vel)
+
+            }
+            pare
+            
+            caso contrario:
+
+            escrevalento("\nComando nao reconhecido\n",vel)
+
+            pare
+               }
+       }
+       se(vida_rei <= 0){
+
+           escrevalento("\nCom um golpe final o rei cai no chão.\n",100)
+
+           escrevalento("\nFinalmente acabou… O reino está a salvo, voce sente felicidade e alivio transcorrer pelo seu corpo\n",150)
+           
+           escrevalento("\nObrigado Aventureiro, agora voce pode descansar",150)
+       }
+       
+       se(vida <= 0){
+
+           escrevalento("\nVoce morreu. espero que na proxima voce tenha mais sorte\n",vel)
+       }
+
+       util.aguarde(5000)
+
+escreva("      ................*,        ,////////////////////////(((((((#((((###(####(/////////(((////*.,,,,,,,,,,,,,,,((((%%%%%%################.,.....................\n")
+escreva("              .....            ./////////////////(((((###((/////////**,,.,,,***************/(////,,,,,,,,,,,.////(%#####%#(##############.......................\n")
+escreva("              ..              ,////////(((((((#(###(///////,.,,********************************///*,,,,,.,,,////(%########(((((((########,......................\n")
+escreva("...                          ,//////((######(////////,..********************(((((((((((((//*/(***//,......*/*/*/##########((((((((((((##(.......................\n")
+escreva(".....                       ,////(##(###(//////*..,***********(((***,,,,,,**((((((((((((((((//(***(/......******###########(/((((((((##((.......................\n")
+escreva("..... .                    ,(((((((##(///*,,,************/(((((*****,,*,,**/(((((((((/////************//(/,...,*((##(((####(///////(###(/.......................\n")
+escreva(".....  .            ......,(##(###(///*,,***********/((((((((/,,,,,,,**,,,*(/*******************************/(#((/*,.../#((#(////((###((*....  .................\n")
+escreva("....../,         .........*((##((//,,,**********/(((((((((((*,,...   .., ,**************************************(/(##(/*,..,((/(((###(//,          .............\n")
+escreva("...,*/.         ..........,,.,/*.,***********(((((((((((((,.         ...******************************************/((((#(/***..,(##(////              ..... ....\n")
+escreva(".*/*/,          .,,*/(((#,.  .,***********((((((((((((((( .       ....*********/************************************(((#((#((/***,..,//.                      ..\n")
+escreva("//*/, .,,***////(##(((##(,.***********(((((((((((((((((..         .,********//*******************/(******************/(((**((#(*****.                         ..\n")
+escreva("////////////////##((##(,,*******,*(((((((((((((((((((*           .,*******//*********************/((******************/(((***/(#/*****.                         \n")
+escreva("///////////////(##(#(.,********(((((((((((((((((((/*.  .       .,*****/*//***********************(((/*******************(((*****/#//****.                       \n")
+escreva("///////////////((#/.,******,/((((((((((((((((((/**,.         .,*******//************************(/(((/**//***************(#(******/(/*****,                     \n")
+escreva("/////////////((#*,********((((((((((((((((((//***.        . ,******/(//************************//  /((/**//**************/#(/*******((******,.                  \n")
+escreva("////////////(#/,*******/((((((#(((((((((((*****,         .,******(#/*************************/(*    ,(((/*((**************(#(********/((******,                 \n")
+escreva("//////////((#,*******/((((((#((((((((((/*****,         .******/#(/*************************/((.    .  *(((/((/************/#(/********//(/******.               \n")
+escreva("////////(#((.*******((((((##(((((((((*******        .*******(#(/*************************/(((///**,..   /(((((/***********/(#(****//(#/(///******. .            \n")
+escreva("/////(#(((*,******/((((((##(((((((//****..       .*******/((/**************************/((*            .,*/((((/**********/(((//((/(##(*((*/******, ..          \n")
+escreva("///(###(#,*******(((((((#(((((/,          .  ,*********/#(/******************//*****/(((/                   .((((*****/((((((((##((/*****((///******..*,..      \n")
+escreva("........,.................   ..       ...************/#(/*****************///*****/(((* .                      ,((((((((((##((/**********/(((//******, ,**.     \n")
+escreva(",.......................... ....,,,*************/**(#(/******************///***//(((*                            #####((/*/((#************((((///******.,,,,**..\n")
+escreva("*,,***,,,,,,,,,,,,********,**,***/**************/(#(/*/****************/(****/((((.                               .//**/**/((#*******///(#//(((/*/******,,/**,,,\n")
+escreva("(((/**,,,***,*,,,,,,***/((**(/**(/************(#((/*****************///**//((((.                                    *(//**/((#/((((/((((#((**((((*/*******.**,*/\n")
+escreva("##((((#.****/(((((##((((/**/(/*/(**********/((((/**************//,,(///((/((,              . ...,,**,,.              ,(((((((((((###(///******/(((/(/*******/*((\n")
+escreva("(#(((((,****((((((((((/*/*/((*/(/*******/((((/************//(* ./(((((((*.                   */...         ...      ..###(####(///**************(((////******///\n")
+escreva("/((#((((,**(((///((((**/**/(/*((/****/(#((//********///((**..*(//((/*.                           *#&@@@@&&&&@&%*       .,((((#/****************///((**//*******(\n")
+escreva(",((((#(#(,**/**/((((**//**((//(/**/(((((/**/////((((#%/,. ,((/,.                             ,&&@&@@@@@@@@@@@@@&@@@&/.   .(((#(******************//((/*(/*******\n")
+escreva("**.,(#((((****/(((/***/**/(//((/(#((((((((((((#%@&&@@@&&&&%,                              . ,/&&&%*#@&&&&&&&&&#*#&@@@&@* . /(#(**********//********/((*,*(/*/***\n")
+escreva("*/**,.,((//**(((*/**///**((/(##(((((((%&&@&&&&&&&&&&@%*%&@&/ .                            . (%,,./&&&&&&&&&&&&&&%.,,#@&@@&, *(#**********//*********//(***,/****\n")
+escreva(",,*****,.**//((***//*//*/((/((/... #@&@@/.#&&&&&&&&&&&&(.,.*(.                               .,.,&&&&&&&&&&&&&&&&&,.../@@&#..,#/*****///*//***/*******/(/*////**\n")
+escreva("*****///,*//((/***(/*/**/(((((.  %&@@%,..%&&&&&%&&&&&&&&/,,.                                    *&&&&&&&&&&&#.  .#&...../&&&*.(/*********/***///******/*//*/**/*\n")
+escreva(",,*****,*//******//*//**/((#(/.,,&&&*...%&&&&&&&&&(     ,                                       ,&&&%(//(&&#,      *  ..,,&&&*(/*****/*///*/////////////*/**#///\n")
+escreva("*******,*///*****/////*//(((/. *&&#.,..,&&&&%(/#%(,     %                                        &#/////(&&&(//**/&&     .,%%%#/****///*//////////////////***,**\n")
+escreva("****,,,*//(**/////////*//(((. ,&&#,..  (&&#///(@&&/////(@.                                       &(//////&&&(//////&,      ,%%%/**/////*(///////(/////////*/****\n")
+escreva(",,,,,,*//((**///////(/**/((*  #%&,     #&/////#&&%//////@                                        ,%////*,,,,,*/////&.       #%%(/*//////(///////(////////(////**\n")
+escreva("*,***,/(*/(*/////(//(/***((, ,%%/      (#////////*/////(#                                         /%//*,,,,,,,,///#(       ,%%#(**/////((////////////////((////*\n")
+escreva(",,,,.*((****/////(//(///*((/ *%%*      .@////,,,,,,,*//%                                           ,%/,,,,,,,,,,/##       .##,,/**/////(/////////(///////(((////\n")
+escreva("..,.,(/,.,,//////(//((/*//((, (%%       *%//,,,,,,,,*/%                                               /*,,,,,,,/(        ,,   ,/**////(//////////#///////(((////\n")
+escreva(",,,./(/..,///////(//((////((/  .(#.       #/,,,,,,,,/.                                               .  ..      .  .  ,(,     /*/////((//////////#///////((#(///\n")
+escreva(".,,,((,,,*(/////((//(((////((.  . ..         .....                                                        .......... ..  .   .//////(((///////(/(#(//////(##(///\n")
+escreva("*,./(/*,,((/////(((//((////((.     .*.    . ......                                                         ..........        *////(((((//////(((%#((////((##(///\n")
+escreva(",,,((*,,/((/////((((/((/////(.        .........                 .                .    ...                      ....... .  ..//////((((///////((#%##((/(((##(////\n")
+escreva(",,/(#,,//#(//////((((/((/////,.    ............              .,(/*,,,*///,,....,/(/,,,,,..*/,.                            ...   ,(((((//////((###(((((((##((////\n")
+escreva(",,((#*//###((/////(((((((/////,       .                     ,/,,,,,..,,,,.,,,,,,..,....,,.,.,(.                               .,(((((//////((###(####(##((//////\n")
+escreva(",*#(///(##(((((///((((((((/////.      .                    ,/.,.,,,,..................,,..,,,*(                              .((((////////##(###(####((/////////\n")
+escreva(",((///////(((###((/((((((((/////,                          **.,.,,,.........................,,(.                            *(((////////(##(###(((((////////////\n")
+escreva("*(/////////////((((((((((((((/////,                        .(,,,,,.........................,,/,                         ../((////////(((((((//((////////////////\n")
+escreva("*//////////////(((((/((((((((((/////. .                     .(,.,,.........................,(,                     . ..*(((//////(((#(((/////(///((//(((((//////\n")
+escreva("*////////////((/////((((((((((((((////*.                      ./*,,,,,................,,*(*.                       .*(/(////((((#(((((((((((((((((((((((((((((((\n")
+escreva("*///((((((((((((((////(((((((((((((((((/(*.                       .*/((///****///(//*,.                         ,/(///,..,(###((((((((((((((((((((((((((((((((((\n")
+escreva("*/(((((((((((((((((((((((((((((((((((/ .*/(#*.                        .        .                           ,..  .     .####(((/(((((((((((((((((((((((((((((((((\n")
+escreva("((((((((((((((((((((((((((((((((####(((#(*  . .                                                                 . ./###(#(((((##((((((((((((((((##(((((((#######\n")
+escreva("/((((((((((((#(((((((((((((((((((((###((((#(#*.                                                         . ..    /#######(###((((((((((((((((((((((((((((((((((((\n")
+escreva("((((((((((((((((((((####((((((((((((((###((#(#((#(,                                                .......  .(###(##(((((((((((((((((((((((((((((((#############\n")
+escreva("###(((#######(((((((((((((########(((((((##(((####(###/.                                     . ....    ,(###((((((((((((((((((((((######((((((((((((((((((((((((\n")
+escreva("*,,,,,,,,,/((##((####((((((((((#######((((####(####(##(##((#(/,.                 ..             ,/(#######(((((((((((((########(((((((((((((((((((((((((((((((((\n")
+escreva("*****,**,,****((############(((((((######((######((((((###(##%&%##%%&&/*..,,,,,,,,,,..,.,.,,*&&%%#%&&%##((#((((((#########((((((((((((((((((((((((((########((((\n")
+escreva("*********//**,,,/##############((((((((####(#######((((((%&%%%%%&%%&%.,,....,,,,,,........,,,,&%%%%%&%%%&#(#(#########((((((((####(((((((((((################((/\n")
+escreva("//////************((##############(((((((###(########((((%%&%%%%%&&&(.,,,,,,,,,......,,,,,,,,,,/&%%&&%%&(/##########(((((######(((((((((############(**(#((((/*,\n")
+escreva("*******************/############(##((((((((##########(/, ..(%%%&&&&(.,,,,,,,,(,,....,,(,,,,,,,,,.(&&&%%%&/(########((((######(((((((##########(##/**/#((((*,,,,,\n")
+escreva("*******(************(#################(((((((#####(...  . (&%%%%&&#.,/((/**,,,*(#(((##/*/#########/%&%%%%%((######((((######((((((######(####((/*,(((*,,,,,,,*,,\n")
+escreva(",,,****#(/*********(####################(((((((((,.      %%%%%%%%#.,*##########################((#,,.*%%&%###,*(##((########((((###########(((//*////**,**,,**/*\n")
+escreva("**///***###(///(###########################((#(#*      .%###%%%%*,,,,#(*////(###########%%%#(////((..  (######(*#############((###########((//(*********,,,,,,,,\n")
+    
+    }
+
+}
