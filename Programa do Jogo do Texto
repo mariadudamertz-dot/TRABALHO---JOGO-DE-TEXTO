@@ -38,7 +38,24 @@ programa
 
        util.aguarde(3000)
 
-       limpa()
+        escrevalento("\n\n======MENU======\n",vel)
+       escrevalento("\n[1] Jogar\n",vel)
+       escrevalento("\n[2] Luta final\n",vel)
+       escrevalento("\n[3] Mambo\n",vel)
+       leia(opcao)
+
+       escolha (opcao){
+           caso 3:
+           mambo()
+
+           pare
+           caso 2:
+
+           lutacomrei()
+
+           pare
+
+           caso 1:
 
        
        escrevalento("\nA jornada começa, vocẽ é um aventureiro em busca de ajudar um reino infeliz, com um rei tirano. tenha cuidado com suas escolhas, pois elas terão consequencias\n", vel)
@@ -127,7 +144,7 @@ escrevalento("\nMais a frente, voce ve um homem preso em vinhas na floresta, par
               escrevalento("\nVoce corta as vinhas com sua espada, liberando o homem mas acaba se machucando no processo\n", vel )
                escrevalento("\n-alguma hora eu te ajudo de volta\n", vel)
                  respeito = respeito + 20
-                 vida = vida - 5
+                 vida = vida - 10
                 pare
          caso 2:
           escrevalento("\nVoce passa reto ignorando o homem enquanto ele te xinga e grita por ajuda\n", vel)
@@ -172,15 +189,15 @@ escrevalento("\nApos seu encontro com cuca, voce continua a caminhar, e dessa ve
 
 escrevalento("\n Ao entrar voce ve o rei sentado em seu trono como se aguardasse sua chegada, o rei olha para voce e um sentimento de deja vu surge em voce, voce ja viu esse rei antes…\n", vel)
 
-escrevalento("REI:- Eu estive te esperando, eu sabia que voce uma hora chegaria, como esta a minha filha, joaozinho?\n", vel)
+escrevalento("REI: Eu estive te esperando, eu sabia que voce uma hora chegaria, sempre tentando se passar como um heroi, como esta a Mariazinha, Joaozinho?\n", vel)
 
-escrevalento("JOAOZINHOela nao e mais sua filha e nem minha esposa", vel)
+escrevalento("JOAOZINHO: Que direito voce tem de perguntar sobre ela depois de deserda-la?!\n", vel)
 
-escrevalento("\n REI- o que voce fez?", vel)
+escrevalento("\n REI: Cale a boca ser inferior, voce e um mero plebeu e um aproveitador que se casou com minha filha por dinheiro\n", vel)
 
- escrevalento("\n JOAOZINHO: Ela nao queria que eu virasse um aventureiro, entao ela pediu divorcio", vel)
+ escrevalento("\n JOAOZINHO: De qualquer forma, nao e como se eu soubesse qualquer coisa sobre a Mariazinha apos o divorcio\n ", vel)
 
-escrevalento("\n REI: Ela foi inteligente uma vez na vida dela, uma pena que ela nao tivesse essa inteligencia quando se casou com voce\n", vel)
+escrevalento("\n REI: Entao quer dizer que ela foi inteligente uma vez na vida? uma pena que ela nao tivesse essa inteligencia quando se casou com voce, seu sangue suga\n", vel)
 
 escrevalento("\nO que voce deseja fazer?\n", vel)
 escrevalento("[1] Lutar com o rei\n", vel)
@@ -199,19 +216,19 @@ escrevalento("[3] fugir\n", vel)
                    
                    escrevalento("\nO rei lança uma bola de fogo na direçao de Joaozinho, o mesmo desvia e começa a tentar se aproximar, falhando miseravelmente\n", vel)
                    
-                   escrevalento("\nO tirano sorri ao ver Joaozinho cainda na armadilha do chao e BOOOOOOM, tudo explode, Joaozinho sente o terror o consumindo\n", vel)
+                   escrevalento("\nO Rei tirano sorri ao ver Joaozinho caindo na armadilha do chao e BOOOOOOM!!!! Tudo explode, Joaozinho sente o terror o consumindo\n", vel)
                    
-                   escrevalento("\nO braco do aventureiro voa longe e sem saida, o rei ataca usando magia de vento cortante, obrigando Joaozinho a recuar pra longe\n", vel)
+                   escrevalento("\nO braco do aventureiro voa para longe, o rei ataca usando magia de vento cortante, obrigando Joaozinho a recuar\n", vel)
                    
-                   escrevalento("Joaozinho esta com serios danos e sem pensar muito, apenas sai correndo do castelo, temendo pela sua vida\n", vel)
+                   escrevalento("Joaozinho sente o medo e a vulnerabilidade o consumindo, se sentindo uma presa prestes a ser devorada, entao, em um ato de desespero, ele sai correndo do palacio\n", vel)
                    
                    escrevalento("\nREI: - CORRA PELA SUA VIDA VERME IMUNDO!!!, QUANDO EU TE PEGAR, TE MATAREI DA FORMA MAIS CRUEL POSSIVEL!!!!!!\n", vel)
                    
-                   escrevalento("\nVoce foge com vida, mas sem um braco e com a honra manchada pra sempre, alem de ter perdido todo o seu ouro\n", vel)
+                   escrevalento("\nVoce consegue fugir com vida, mas sem um braco e com a honra manchada pra sempre, alem de ter perdido todo o seu ouro\n", vel)
 
                    escrevalento("\nEm alguns anos voce sera lembrado como a escoria humana e uma desonra a todos\n", vel)
 
-                    escrevalento("\nEspero que voce tenha gostado em quanto aventureiro, volte pra casa e nunca mais apareça novamente",vel)
+                   escrevalento("\nEspero que voce tenha gostado da sua jornada, volte pra casa e nunca mais apareça novamente",vel)
                    
                    vida = vida - 50
                    respeito = respeito - 50
@@ -221,7 +238,7 @@ escrevalento("[3] fugir\n", vel)
     }
 
     }
-    funcao escrevalento(cadeia texto, inteiro velocidade){
+    }funcao escrevalento(cadeia texto, inteiro velocidade){
        inteiro numcaracteres = texto.numero_caracteres(texto)
        caracter letra
        
@@ -280,16 +297,16 @@ escrevalento("[3] fugir\n", vel)
     }
     funcao eventofinalcasamento (){
             se (respeito <= 20 e ouro >= 50 ou pocao == verdadeiro){
-                escrevalento("\nREI: - O-oque?? v-voce endoidou de vez??\n", vel)
+                escrevalento("\nREI: O-oque?? v-voce endoidou de vez??\n", vel)
                 escrevalento("\nO rei parece chocado com seu pedido porem ele nao te mata imediatamente e voce ve um leve corado em seu rosto, seria isso um sinal?\n", vel)
-                 escrevalento("\nREI: - mas ate que voce nao e tao ruim assim..... PARABENS! Voce encontrou o final secreto! voce conseguiu casar com o rei e reinar ao seu lado\n", vel)
-                 escrevalento("\nessa definitivamente nao era sua missao mas acho que ja e alguma coisa\n", vel)
+                 escrevalento("\nREI: mas parando pra pensar ate que voce nao e tao ruim assim.... PARABENS! Voce encontrou o final secreto! voce conseguiu casar com o rei e reinar ao seu lado\n", vel)
+                 escrevalento("\nessa DEFINITIVAMENTE nao era sua missao, mas acho que ja e alguma coisa pelo menos\n", vel)
             }
             senao{
-                escrevalento("\nO rosto do rei se fecha em uma expressao de choque e raiva\n", vel)
-                escrevalento("\nREI-Voce esta fazendo uma piada? acha que isso e uma brincadeira? criatura insolente\n", vel) 
-                escrevalento("\nEnquanto voce estava ajoelhado no chao o rei te ataca\n", vel)
-                escrevalento("\nPARABENS! Voce morreu nas maos do rei, poxa nao foi dessa vez, acho que era melhor ter ficado com a mariazinha, ne?\n", vel)
+                escrevalento("\nO rosto do rei se fecha em uma expressao de choque e raiva enquanto ele encara joaozinho ajoelhado em sua frente\n", vel)
+                escrevalento("\nREI: Voce esta fazendo uma piada? acha que isso e uma brincadeira? criatura insolente\n", vel) 
+                escrevalento("\nEnquanto voce estava ajoelhado no chao o rei te ataca com um golpe fatal\n", vel)
+                escrevalento("\nPARABENS! Voce morreu nas maos do rei mas nem houve luta, poxa nao foi dessa vez, acho que era melhor ter ficado com a mariazinha, ne?\n", vel)
   
             }
     }
@@ -430,7 +447,7 @@ escrevalento("[3] fugir\n", vel)
 
            escrevalento("\nVoce morreu. espero que na proxima voce tenha mais sorte\n",vel)
        }
-
+}funcao mambo(){
        util.aguarde(5000)
 
 escreva("      ................*,        ,////////////////////////(((((((#((((###(####(/////////(((////*.,,,,,,,,,,,,,,,((((%%%%%%################.,.....................\n")
@@ -501,3 +518,6 @@ escreva("**///***###(///(###########################((#(#*      .%###%%%%*,,,,#(
     }
 
 }
+
+
+
